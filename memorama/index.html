@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Reto 2 JavaScript - Memorama</title>
+        <link rel="stylesheet" type="text/css" href="css/estilos.css">
+        <script src="js/memorama.js"></script>
+    </head>
+    <body onload="creaRecords()">        
+        <div class="contenedor">
+            <div class="cabecera">MEMORAMA</div>
+            <div class="menu">
+                <div >Nombre del jugador: &nbsp;<input class="inpuText" id="tNombre" type="text" name="Nombre" value="Nombre" onclick="onClickNombre()" onblur="onBlurNombre()"></div><br>
+                Nivel:
+                <div>                    
+                    <input id="rbNivel1" type="radio" name="nivel" value="nivel1" checked="true">Fácil &nbsp;&nbsp;
+                    <input id="rbNivel2" type="radio" name="nivel" value="nivel2">Medio&nbsp;&nbsp;
+                    <input id="rbNivel3" type="radio" name="nivel" value="nivel3">Dificil
+                </div><br>
+                <input class="boton" id="btnJuega" type="button" name="" value="Jugar" onclick="onClickJuega()">
+                <input class="boton"  id="btnRecords" type="button" name="" value="Records" onclick="onClickRecors()"><br><br>
+                <div id="records" class="records"></div>
+                <div id="txtTime" class="tiempo"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;00:00:00</div>
+            </div>
+            <div id="tab" class="tablero"></div> 
+        </div>
+        <div class="pie">Universidad Autónoma de San Luis Potosi <br>U.A.S.L.P <br> Área de Computación e Informática <br> Tecnologías Web <br> <br>Programado por: Alfredo Orozco de la Paz</div> 
+    </body>
+</html>
+
